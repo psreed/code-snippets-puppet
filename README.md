@@ -9,11 +9,11 @@ Yes, one template for both.
 usage:<br />
 <pre>
 user_data            => epp('demofiles/user-data.epp', {
-  'puppet_master'    => '<yer master>',
-  'agent_certname'   => '<yer wanted fqdn>',
-  'os_type'          => '<Linux || Windows>',
-  'pp_preshared_key' => '<fun key stuff>',
-  'pp_cloudplatform' => '<whatever you want, i used "aws">',
-  'pp_role'          => '<whatever you want>',
+  'puppet_master'    => 'master.example.com',
+  'agent_certname'   => 'mynewclient.example.com',
+  'os_type'          => 'Linux or Windows',
+  'pp_preshared_key' => 'key, if using autosign',
+  'pp_cloudplatform' => 'aws',
+  'pp_role'          => 'role::my-role-for-this-host',
 }),
 </pre>
