@@ -2,11 +2,12 @@
 Snippets of useful puppetcode
 
 # user-data.pp
-
-This is a Puppet EPP format template for AWS user-data for Windows and Linux
+<p>
+This is a Puppet EPP format template for AWS user-data for Windows and Linux.
 Yes, one template for both.
-
-usage:
+</p><br />
+usage:<br />
+<pre>
 user_data            => epp('demofiles/user-data.epp', {
   'puppet_master'    => '<yer master>',
   'agent_certname'   => '<yer wanted fqdn>',
@@ -15,3 +16,4 @@ user_data            => epp('demofiles/user-data.epp', {
   'pp_cloudplatform' => '<whatever you want, i used "aws">',
   'pp_role'          => '<whatever you want>',
 }),
+</pre>
