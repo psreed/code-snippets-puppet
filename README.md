@@ -3,16 +3,14 @@ Snippets of useful puppetcode.
 
 This is just a repo for me to dump example files and notes on puppet code that took me a while to figure out. Mostly sytax examples and things that are more complex than the simple examples provided in the standard puppet documentation.
 
-# execwindowscmd.pp
-<b>Exec Windows Command 
-(cmd.exe & powershell.exe examples)</b>
+# --==[ execwindowscmd.pp ]==--
+<b>Exec Windows Command (cmd.exe & powershell.exe examples)</b>
 <p>
 This file is just an example file on how to run puppet exec resources on windows nodes. The purpose of this file isn't so much to show what's being run as it is an example of how to <b>properly use escape sequences for windows nodes</b>. These are just some complex examples on how those escapes work, because I don't ever want to fight that hard to figure them out again. 
 </p>
 
-# jre8viaarchive.pp
-<strong>Java JRE 8 via Archive Module 
-(.tar.gz extraction on Windows)</strong>
+# --==[ jre8viaarchive.pp ]==--
+<b>Java JRE 8 via Archive Module (.tar.gz extraction on Windows)</b>
 <p>
 This file is an example of how to use the puppet-archive module on windows to extract a '.tar.gz'
 
@@ -23,8 +21,8 @@ file types (this is a 7zip limitation). There may be other wrapped archive types
 
 </p>
 
-# user-data.epp
-<string>Amazon EC2 UserData EPP Template Example</strong>
+# --==[ user-data.epp ]==--
+<b>Amazon EC2 UserData EPP Template Example</b>
 <p>
 This file is a Puppet EPP format template for AWS user-data for Windows and Linux.
 Yes, one template for both. This has been migrated into my awsec2tags module (separate repo), but I'll just highlight the EPP template part it and leave that file here as an example. See my awsec2tags repo for a complete module with this included.
