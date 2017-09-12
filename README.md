@@ -10,6 +10,12 @@ This file is just an example file on how to run puppet exec resources on windows
 
 # jre8viaarchive.pp
 <p>
+This file is an example of how to use the puppet-archive module on windows to extract a '.tar.gz'
+
+On Linux nodes, the puppet-archive module uses the 'tar' command, which can extract a '.tar.gz' file in a single step.
+On Windows nodes however, puppet-archive uses '7zip' which currently requires a 2-step process for these particular 
+file types (this is a 7zip limitation). There may be other wrapped archive types that may also require this 
+2-step method on Windows ('.cpio.tar' files maybe?).
 
 </p>
 
