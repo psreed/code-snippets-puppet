@@ -1,6 +1,6 @@
 #Install JRE 8 (Server Edition) from '.tar.gz' in a Windows node via the Puppet Archive Module
 #
-# This is an example of how to use puppet-archive on windows to extract a .tar.gz
+# This file is an example of how to use the puppet-archive module on windows to extract a '.tar.gz'
 #
 # On Linux nodes, the puppet-archive module uses the 'tar' command, which can extract a '.tar.gz' file in a single step.
 # On Windows nodes however, puppet-archive uses '7zip' which currently requires a 2-step process for these particular 
