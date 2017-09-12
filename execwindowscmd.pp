@@ -4,6 +4,9 @@ class execwindowscmd {
   ######################################
   # Windows cmd.exe example (may not work on future versions of windows)
   ######################################
+  #
+  # Note: java.exe (and javac.exe) prints it's version string to STDERR instead of STDOUT like most programs do.
+  #       For this reason, we are using 2>&1 to redirect STDERR to STDOUT in the command.
 
   exec { 'javarun':
     cwd       => 'C:\\Program Files (x86)\\Java\\jre1.8.0_144\\bin',
@@ -16,7 +19,7 @@ class execwindowscmd {
   # Pure Powershell Example
   ######################################
   #
-  # Note: java.exe (and javac.exe) prints it's version string to STDERR instead of STDOUT like most programs do
+  # Note: java.exe (and javac.exe) prints it's version string to STDERR instead of STDOUT like most programs do.
   #       For this reason, we are using -RedirectStandardError instead of -RedirectStandardOutput in the command.
   #       Keep in mind that powershell does not support redirecting both STDERR and STDOUT to the same output file.
 
