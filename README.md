@@ -1,6 +1,10 @@
 # code-snippets-puppet
 Snippets of useful puppetcode
 
+# execwindowscmd.pp
+<p>
+This is just an example file on how to run puppet exec resources on windows nodes. The purpose of this file isn't so much to show what's being run as it is an example of how to <b>properly use escape sequences for windows nodes</b>. These are just some complex examples on how those escapes work, because I don't ever want to fight that hard to figure them out again. 
+</p>
 # user-data.epp
 <p>
 This is a Puppet EPP format template for AWS user-data for Windows and Linux.
